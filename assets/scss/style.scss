@@ -2,6 +2,8 @@
 // All Styles
 .header {
   &__top {
+    z-index: 10;
+    background-color: #fff;
     padding: 22px 0;
     display: flex;
     align-items: center;
@@ -37,6 +39,9 @@
     font-family: 'Space Mono';
     max-width: 500px;
     color: $white;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
   &__main--subtitle {
     position: relative;
@@ -45,8 +50,8 @@
     color: $white;
     position: relative;
     &:not(:last-child) {
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
     img {
       position: absolute;
@@ -63,6 +68,9 @@
     }
   }
   &__main--btn {
+    &:not(:last-child) {
+      margin-top: 20px;
+    }
     margin-left: 95px;
   }
 }
@@ -75,18 +83,13 @@
     width: 973px;
     height: 15px;
     top: 200px;
-    left: 0px;
+    right: 30%;
     background-color: $lightGrey;
   }
   &__row {
     display: flex;
     column-gap: 30px;
   }
-
-  &__column {
-    z-index: 12;
-  }
-
   &__img {
     width: 96px;
     height: 96px;
@@ -96,6 +99,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 10;
   }
 
   &__title {
@@ -110,6 +115,8 @@
 // Section Circle
 .circle {
   position: relative;
+  .container {
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -127,12 +134,10 @@
     margin-bottom: 40px;
   }
 
-  &__btn {
-  }
-
   &__image {
-    picture {
-    }
+    margin: 0 auto;
+    z-index: 5;
+    border-radius: 50%;
   }
 }
 .circle-1 {
@@ -144,7 +149,8 @@
   .circle__line-img {
     position: absolute;
     right: 0;
-    bottom: 77px;
+    bottom: 74px;
+    z-index: 6;
   }
 }
 .circle-2 {
@@ -157,6 +163,7 @@
     position: absolute;
     top: 77px;
     left: 0;
+    z-index: 6;
   }
 }
 .circle-3 {
@@ -169,6 +176,11 @@
     position: absolute;
     top: 175px;
     right: 0;
+    z-index: 6;
+  }
+  .circle__image {
+    width: 445px;
+    height: 445px;
   }
 }
 // Footer
@@ -219,6 +231,7 @@
   }
 
   &__btn--subtitle {
+    text-align: left;
     font-family: 'Space Mono';
     font-weight: 700;
     font-size: 10px;
@@ -227,6 +240,7 @@
   }
 
   &__btn--title {
+    text-align: left;
     font-family: 'Space Mono';
     font-weight: 700;
     font-size: 20px;

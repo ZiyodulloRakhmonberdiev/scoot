@@ -5,21 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/scss/dist/base.css">
-  <link rel="stylesheet" href="./assets/scss/dist/style.css">
-  <link rel="stylesheet" href="./assets/scss/dist/media.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/mixins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media.css">
   <title>scoot</title>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
+      <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="container">
         <!-- Logo And Navigation Content -->
         <div class="header__top">
           <div class="header__top--left">
             <a href="#" class="logo"><img src="./assets/img/svg/logo-scoot.svg" alt=""></a>
-            <nav class="menu">
+            <nav class="header__menu menu">
               <ul class="menu__list">
                 <li class="menu__item"><a href="#" class="menu__link">About</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Location</a></li>
@@ -48,120 +54,125 @@
     </header>
     <main class="main">
       <div class="opportunity">
-        <span class="opportunity__line"></span>
         <div class="container">
           <div class="opportunity__row">
             <div class="opportunity__column">
               <div class="opportunity__img"><img src="./assets/img/svg/opportunities-01.svg" alt=""></div>
-              <h4 class="opportunity__title title">Locate with app</h4>
-              <p class="opportunity__subtitle subtitle">Use the app to find the nearest scooter to you. We are
-                continuously
-                placing scooters in the areas with most demand, so one should never be too far away.
-              </p>
+              <div class="opportunity__text-content">
+                <h4 class="opportunity__title title">Locate with app</h4>
+                <p class="opportunity__subtitle subtitle">Use the app to find the nearest scooter to you. We are
+                  continuously
+                  placing scooters in the areas with most demand, so one should never be too far away.
+                </p>
+              </div>
             </div>
             <div class="opportunity__column">
               <div class="opportunity__img"><img src="./assets/img/svg/opportunities-02.svg" alt=""></div>
-              <h4 class="opportunity__title title">Locate with app</h4>
-              <p class="opportunity__subtitle subtitle">Use the app to find the nearest scooter to you. We are
-                continuously
-                placing scooters in the areas with most demand, so one should never be too far away.
-              </p>
+              <div class="opportunity__text-content">
+                <h4 class="opportunity__title title">Locate with app</h4>
+                <p class="opportunity__subtitle subtitle">Use the app to find the nearest scooter to you. We are
+                  continuously
+                  placing scooters in the areas with most demand, so one should never be too far away.
+                </p>
+              </div>
             </div>
             <div class="opportunity__column">
-              <div class="opportunity__img"><img src="./assets/img/svg/opportunities-03.svg" alt=""></div>
-              <h4 class="opportunity__title title">Locate with app</h4>
-              <p class="opportunity__subtitle subtitle">Use the app to find the nearest scooter to you. We are
-                continuously
-                placing scooters in the areas with most demand, so one should never be too far away.
-              </p>
+              <div class="opportunity__img with-lines"><img src="./assets/img/svg/opportunities-03.svg" alt=""></div>
+              <div class="opportunity__text-content">
+                <span class="opportunity__line"></span>
+                <h4 class="opportunity__title title">Locate with app</h4>
+                <p class="opportunity__subtitle subtitle">Use the app to find the nearest scooter to you. We are
+                  continuously
+                  placing scooters in the areas with most demand, so one should never be too far away.
+                </p>
+                <div class="opportunity__text-content">
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <section class="circle circle-1">
-        <div class="container">
-          <div class="circle__mask-img">
-            <img src="./assets/img/circle-images/mask.jpg" alt="">
-          </div>
+        <section class="circle circle-1">
           <div class="circle__line-img">
             <img src="./assets/img/lines/hero-line-01.png" alt="">
           </div>
-          <div class="circle__inner">
-            <div class="circle__body">
-              <h2 class="circle__title title">Easy to use riding telemetry</h2>
-              <p class="circle__subtitle subtitle">
-                The Scoot app is available with riding telemetry. This means it can
-                show you your average speed, how long you've been using the scooter, your traveling distance, and many
-                more things all in an easy to use app.
-              </p>
-              <a href="#" class="circle__btn btn">Learn More</a>
-            </div>
-            <div class="circle__image">
-              <picture>
-                <source media="(min-width:650px)" srcset="./assets/img/circle-images/01.jpg">
-                <source media="(min-width:465px)" srcset="./assets/img/circle-images/01.jpg">
-                <img src="./assets/img/circle-images/01.jpg" alt="" style="width:auto;">
-              </picture>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="circle circle-2">
-        <div class="container">
-          <div class="circle__mask-img">
-            <img src="./assets/img/circle-images/mask-left.jpg" alt="">
-          </div>
-          <div class="circle__line-img">
-            <img src="./assets/img/lines/hero-line-02.png" alt="">
-          </div>
-          <div class="circle__inner">
-            <div class="circle__image">
-              <picture>
-                <source media="(min-width:650px)" srcset="./assets/img/circle-images/02.jpg">
-                <source media="(min-width:465px)" srcset="./assets/img/circle-images/02.jpg">
-                <img src="./assets/img/circle-images/02.jpg" alt="" style="width:auto;">
-              </picture>
-            </div>
-            <div class="circle__body">
-              <h2 class="circle__title title">Coming to a city near you</h2>
-              <p class="circle__subtitle subtitle">
-                Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you
-                want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming
-                year.
-              </p>
-              <a href="#" class="circle__btn btn">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="circle circle-3">
-        <div class="container">
           <div class="circle__mask-img">
             <img src="./assets/img/circle-images/mask.jpg" alt="">
           </div>
-          <div class="circle__line-img">
-            <img src="./assets/img/lines/hero-line-03.png" alt="">
-          </div>
-          <div class="circle__inner">
-            <div class="circle__body">
-              <h2 class="circle__title title">Zero hassle payments</h2>
-              <p class="circle__subtitle subtitle">
-                Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link
-                your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a
-                month.
-              </p>
-              <a href="#" class="circle__btn btn">Learn More</a>
-            </div>
-            <div class="circle__image">
-              <picture>
-                <source media="(min-width:650px)" srcset="./assets/img/circle-images/03.jpg">
-                <source media="(min-width:465px)" srcset="./assets/img/circle-images/03.jpg">
-                <img src="./assets/img/circle-images/03.jpg" alt="" style="width:auto;">
-              </picture>
+          <div class="container">
+            <div class="circle__inner">
+              <div class="circle__body">
+                <h2 class="circle__title title">Easy to use riding telemetry</h2>
+                <p class="circle__subtitle subtitle">
+                  The Scoot app is available with riding telemetry. This means it can
+                  show you your average speed, how long you've been using the scooter, your traveling distance, and many
+                  more things all in an easy to use app.
+                </p>
+                <a href="#" class="circle__btn btn">Learn More</a>
+              </div>
+              <div class="circle__image">
+                <picture>
+                  <source media="(min-width:680px)" srcset="./assets/img/circle-images/01.jpg">
+                  <img src="./assets/img/circle-images/01-mini.jpg" alt="" style="width: 285px;">
+                </picture>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="circle circle-2">
+          <div class="container">
+            <div class="circle__mask-img">
+              <img src="./assets/img/circle-images/mask-left.jpg" alt="">
+            </div>
+            <div class="circle__line-img">
+              <img src="./assets/img/lines/hero-line-02.png" alt="">
+            </div>
+            <div class="circle__inner">
+              <div class="circle__image">
+                <picture>
+                  <source media="(min-width:680px)" srcset="./assets/img/circle-images/02.jpg">
+                  <img src="./assets/img/circle-images/02-mini.jpg" alt="" style="width: 285px;">
+                </picture>
+              </div>
+              <div class="circle__body">
+                <h2 class="circle__title title">Coming to a city near you</h2>
+                <p class="circle__subtitle subtitle">
+                  Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you
+                  want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming
+                  year.
+                </p>
+                <a href="#" class="circle__btn btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="circle circle-3">
+          <div class="container">
+            <div class="circle__mask-img">
+              <img src="./assets/img/circle-images/mask.jpg" alt="">
+            </div>
+            <div class="circle__line-img">
+              <img src="./assets/img/lines/hero-line-03.png" alt="">
+            </div>
+            <div class="circle__inner">
+              <div class="circle__body">
+                <h2 class="circle__title title">Zero hassle payments</h2>
+                <p class="circle__subtitle subtitle">
+                  Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also
+                  link
+                  your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a
+                  month.
+                </p>
+                <a href="#" class="circle__btn btn">Learn More</a>
+              </div>
+              <div class="circle__image">
+                <picture>
+                  <source media="(min-width:680px)" srcset="./assets/img/circle-images/03.jpg">
+                  <img src="./assets/img/circle-images/03-mini.jpg" alt="" style="width: 285px;">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
     <footer class="footer">
       <div class="footer__main">
@@ -251,6 +262,7 @@
       </div>
     </footer>
   </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
