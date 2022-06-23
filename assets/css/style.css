@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Lexend+Deca:regular&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Space+Mono:regular,700&display=swap");
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(../fonts/LexendDeca.ttf);
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url(../fonts/SpaceMono-Bold.ttf), url(../fonts/SpaceMono-Regular.ttf);
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -139,11 +145,16 @@ h6 {
   padding: 14px 40px;
   color: #fff;
   background-color: #fcb72b;
+  transition: 0.3s ease 0s;
+}
+.btn:hover {
+  color: #fcb72b;
+  background-color: transparent !important;
+  border: 3px solid #fcb72b;
 }
 
 .title {
   font-weight: 700;
-  color: #495567;
   font-family: "Space Mono";
 }
 
@@ -168,6 +179,43 @@ h6 {
   color: #939caa;
   font-family: "Space Mono";
   font-weight: 700;
+  transition: all 0.3s ease 0s;
+}
+.menu__link:hover {
+  color: #fcb72b;
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 30px;
+  transform: translate(-10px, -50%);
+  padding-left: 2px;
+  cursor: pointer;
+  border: 10px solid transparent;
+}
+.menu-btn span {
+  display: block;
+  width: 20px;
+  height: 3.7px;
+  background-color: #fcb72b;
+  transition: transform 0.3s ease-in 0s;
+}
+.menu-btn span:not(:last-child) {
+  margin-bottom: 2.5px;
+}
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translateX(20%);
+}
+.menu-btn.active span:nth-child(2) {
+  transition: all 0.3s ease 0s;
+  display: none;
+}
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translateX(20%);
 }
 
 .header__top {
@@ -184,14 +232,21 @@ h6 {
 }
 .header__top--btn {
   margin-left: auto;
+  height: 53px;
+  width: 180px;
+  white-space: nowrap;
 }
 .header__main {
   position: relative;
   padding: 153px 0px 152px 165px;
   min-height: 650px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .header__main .container {
   position: absolute;
+  height: auto;
   padding: 0;
 }
 .header__main--image {
@@ -208,18 +263,14 @@ h6 {
   font-family: "Space Mono";
   max-width: 500px;
   color: #fff;
-}
-.header__main--title:not(:last-child) {
   margin-bottom: 20px;
 }
 .header__main--subtitle {
   position: relative;
   max-width: 405px;
   margin-left: 95px;
-  color: #fff;
+  color: #fff !important;
   position: relative;
-}
-.header__main--subtitle:not(:last-child) {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -237,10 +288,8 @@ h6 {
   transform: translateY(-5%);
 }
 .header__main--btn {
-  margin-left: 95px;
-}
-.header__main--btn:not(:last-child) {
   margin-top: 20px;
+  margin-left: 95px;
 }
 
 .opportunity {
@@ -274,6 +323,7 @@ h6 {
 }
 .opportunity__title {
   margin-bottom: 27px;
+  color: #495567;
 }
 .opportunity__subtitle {
   max-width: 350px;
@@ -292,6 +342,7 @@ h6 {
 }
 .circle__title {
   margin-bottom: 24px;
+  color: #495567;
 }
 .circle__subtitle {
   margin-bottom: 40px;
@@ -433,8 +484,8 @@ h6 {
   display: flex;
   align-items: center;
 }
-.bottom-footer__left .logo svg {
-  background-color: #fff;
+.bottom-footer__left svg path {
+  fill: #e5ecf4;
 }
 
 .social {
@@ -449,4 +500,8 @@ h6 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.social__item:hover svg path {
+  transition: all 0.3s ease 0s;
+  fill: #e5ecf4;
 }/*# sourceMappingURL=style.css.map */

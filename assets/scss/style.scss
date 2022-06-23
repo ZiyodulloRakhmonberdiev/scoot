@@ -15,13 +15,20 @@
   }
   &__top--btn {
     margin-left: auto;
+    height: 53px;
+    width: 180px;
+    white-space: nowrap;
   }
   &__main {
     position: relative;
     padding: 153px 0px 152px 165px;
     min-height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     .container {
       position: absolute;
+      height: auto;
       padding: 0;
     }
   }
@@ -39,20 +46,16 @@
     font-family: 'Space Mono';
     max-width: 500px;
     color: $white;
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
   }
   &__main--subtitle {
     position: relative;
     max-width: 405px;
     margin-left: 95px;
-    color: $white;
+    color: $white !important;
     position: relative;
-    &:not(:last-child) {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+    margin-top: 20px;
+    margin-bottom: 20px;
     img {
       position: absolute;
     }
@@ -68,9 +71,7 @@
     }
   }
   &__main--btn {
-    &:not(:last-child) {
-      margin-top: 20px;
-    }
+    margin-top: 20px;
     margin-left: 95px;
   }
 }
@@ -105,6 +106,7 @@
 
   &__title {
     margin-bottom: 27px;
+    color: $darkNavy;
   }
 
   &__subtitle {
@@ -128,6 +130,7 @@
 
   &__title {
     margin-bottom: 24px;
+    color: $darkNavy;
   }
 
   &__subtitle {
@@ -274,8 +277,8 @@
   &__left {
     display: flex;
     align-items: center;
-    .logo svg {
-      background-color: #fff;
+    svg path {
+      fill: $lightGrey;
     }
   }
 }
@@ -289,5 +292,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    &:hover {
+      svg path {
+        transition: all 0.3s ease 0s;
+        fill: $lightGrey;
+      }
+    }
   }
 }

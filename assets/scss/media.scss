@@ -45,20 +45,20 @@
       width: 100%;
       height: 100%;
       background-size: cover;
+      img {
+        object-position: right;
+      }
     }
     &__main--title {
       max-width: 573px;
       color: $white;
+      margin-bottom: 12px;
     }
     &__main--subtitle {
       color: $white;
       max-width: 573px;
-      margin-left: 0;
+      margin: 12px auto 16px 0;
       position: static;
-      &:not(:last-child) {
-        margin-top: 40px;
-        margin-bottom: 40px;
-      }
       img {
         position: absolute;
       }
@@ -72,6 +72,7 @@
     }
     &__main--btn {
       margin-left: 0;
+      margin-top: 16px;
     }
   }
   .opportunity {
@@ -87,7 +88,7 @@
       z-index: 1;
     }
     &__row {
-      padding: 50px 0 50px 0;
+      padding: 0px 0 45px 0;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -179,6 +180,9 @@
   }
 }
 @media (max-width: 680px) {
+  .menu-btn {
+    display: flex;
+  }
   .header {
     position: relative;
     height: 64px;
@@ -193,7 +197,7 @@
     }
     &__top--btn {
       position: absolute;
-      top: 648px;
+      top: 640px;
       left: 34px;
       z-index: 60;
       transition: all 0.3s ease 0s;
@@ -238,6 +242,7 @@
     &__main {
       padding: 115px 32px 179px 32px;
       text-align: center;
+      object-position: right;
     }
     &__main--title {
       font-size: 40px;
