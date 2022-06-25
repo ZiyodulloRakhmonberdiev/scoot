@@ -91,16 +91,23 @@
   padding: 160px 0 100px 0;
   &__line {
     position: absolute;
-    width: 973px;
+    width: 1010px;
     height: 15px;
     top: 200px;
     right: 30%;
     background-color: $lightGrey;
   }
   &__row {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     display: flex;
-    gap: 30px;
     justify-content: center;
+    grid-template: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__column {
+    width: calc(100% / 3.2);
   }
   &__img {
     width: 96px;

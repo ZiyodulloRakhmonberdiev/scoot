@@ -306,7 +306,7 @@ h6 {
 }
 .opportunity__line {
   position: absolute;
-  width: 973px;
+  width: 1010px;
   height: 15px;
   top: 200px;
   right: 30%;
@@ -314,8 +314,13 @@ h6 {
 }
 .opportunity__row {
   display: flex;
-  gap: 30px;
   justify-content: center;
+  grid-template: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.opportunity__column {
+  width: 31.25%;
 }
 .opportunity__img {
   width: 96px;

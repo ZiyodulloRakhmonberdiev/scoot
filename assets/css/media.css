@@ -246,6 +246,9 @@ h6 {
   .header {
     z-index: 10;
   }
+  .header .container {
+    margin-left: 0;
+  }
   .header__top {
     height: 96px;
   }
@@ -280,6 +283,7 @@ h6 {
     max-width: 573px;
     color: #fff;
     margin-bottom: 12px;
+    text-align: center;
   }
   .header__main--subtitle {
     color: #fff;

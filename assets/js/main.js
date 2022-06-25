@@ -11,8 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const opportunityColumn = document.querySelectorAll('.opportunity__column')
   const opportunityLine = document.querySelector('.opportunity__line')
+  const opportunityRow = document.querySelector('.opportunity__row')
   console.log(opportunityColumn.length)
   if (opportunityColumn.length < 3) {
     opportunityLine.style.width = '0'
+    opportunityRow.style.justifyContent = 'space-around'
+  }
+  if (opportunityColumn.length == 4 || opportunityColumn.length == 7) {
+    opportunityRow.style.justifyContent = 'flex-start'
   }
 })
