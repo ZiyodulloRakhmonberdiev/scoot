@@ -8,4 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     headerMenu.classList.toggle('active')
     headerButton.classList.toggle('active')
   })
+
+  const opportunityColumn = document.querySelectorAll('.opportunity__column')
+  const opportunityLine = document.querySelector('.opportunity__line')
+  console.log(opportunityColumn.length)
+  if (opportunityColumn.length < 3) {
+    opportunityLine.style.width = '0'
+  }
 })

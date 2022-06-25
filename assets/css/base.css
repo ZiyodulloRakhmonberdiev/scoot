@@ -146,6 +146,8 @@ h6 {
   color: #fff;
   background-color: #fcb72b;
   transition: 0.3s ease 0s;
+  white-space: nowrap;
+  height: 53px;
 }
 .btn:hover {
   color: #fcb72b;

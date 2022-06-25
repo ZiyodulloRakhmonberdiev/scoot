@@ -30,6 +30,18 @@
   // Header
   .header {
     z-index: 10;
+    &__top {
+      height: 96px;
+    }
+    &__top--left {
+      .logo {
+        margin-top: 2px;
+        margin-left: -2px;
+      }
+      .menu {
+        padding-left: 13px;
+      }
+    }
     &__main {
       padding: 137px 97px 137px 97px;
       text-align: center;
@@ -57,7 +69,7 @@
     &__main--subtitle {
       color: $white;
       max-width: 573px;
-      margin: 12px auto 16px 0;
+      margin: 36px auto 16px 0;
       position: static;
       img {
         position: absolute;
@@ -92,7 +104,6 @@
       text-align: center;
       display: flex;
       justify-content: center;
-      flex-direction: column;
       align-items: center;
       margin: 0 auto;
       max-width: 573px;
@@ -240,7 +251,7 @@
       transform: translate(0);
     }
     &__main {
-      padding: 115px 32px 179px 32px;
+      padding: 115px 32px 179px 32px !important;
       text-align: center;
       object-position: right;
     }
@@ -280,6 +291,7 @@
     }
     &__row {
       column-gap: 0;
+      justify-content: center;
     }
     &__column {
       padding-left: 0;
@@ -306,6 +318,7 @@
     &__subtitle {
       text-align: center;
       max-width: 311px;
+      margin: 0 auto;
     }
   }
   .circle {

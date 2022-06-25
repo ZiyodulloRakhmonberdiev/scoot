@@ -146,6 +146,8 @@ h6 {
   color: #fff;
   background-color: #fcb72b;
   transition: 0.3s ease 0s;
+  white-space: nowrap;
+  height: 53px;
 }
 .btn:hover {
   color: #fcb72b;
@@ -244,6 +246,16 @@ h6 {
   .header {
     z-index: 10;
   }
+  .header__top {
+    height: 96px;
+  }
+  .header__top--left .logo {
+    margin-top: 2px;
+    margin-left: -2px;
+  }
+  .header__top--left .menu {
+    padding-left: 13px;
+  }
   .header__main {
     padding: 137px 97px 137px 97px;
     text-align: center;
@@ -272,7 +284,7 @@ h6 {
   .header__main--subtitle {
     color: #fff;
     max-width: 573px;
-    margin: 12px auto 16px 0;
+    margin: 36px auto 16px 0;
     position: static;
   }
   .header__main--subtitle img {
@@ -308,7 +320,6 @@ h6 {
     text-align: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     margin: 0 auto;
     max-width: 573px;
@@ -447,7 +458,7 @@ h6 {
     transform: translate(0);
   }
   .header__main {
-    padding: 115px 32px 179px 32px;
+    padding: 115px 32px 179px 32px !important;
     text-align: center;
     -o-object-position: right;
        object-position: right;
@@ -490,6 +501,7 @@ h6 {
   .opportunity__row {
     -moz-column-gap: 0;
          column-gap: 0;
+    justify-content: center;
   }
   .opportunity__column {
     padding-left: 0;
@@ -515,6 +527,7 @@ h6 {
   .opportunity__subtitle {
     text-align: center;
     max-width: 311px;
+    margin: 0 auto;
   }
 
   .circle__image {

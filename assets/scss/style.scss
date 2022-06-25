@@ -1,10 +1,10 @@
 @import 'base';
-// All Styles
+// Header
 .header {
   &__top {
     z-index: 10;
     background-color: #fff;
-    padding: 22px 0;
+    padding: 21px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,16 +12,24 @@
   &__top--left {
     display: flex;
     align-items: center;
+    .logo {
+      margin-top: 6px;
+    }
+  }
+  .menu {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 42px;
+      }
+    }
   }
   &__top--btn {
     margin-left: auto;
-    height: 53px;
-    width: 180px;
-    white-space: nowrap;
+    width: 179px;
   }
   &__main {
     position: relative;
-    padding: 153px 0px 152px 165px;
+    padding: 158px 0px 152px 100px !important;
     min-height: 650px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,6 +38,8 @@
       position: absolute;
       height: auto;
       padding: 0;
+      margin-top: -3px;
+      margin-left: 64px;
     }
   }
   &__main--image {
@@ -54,14 +64,14 @@
     margin-left: 95px;
     color: $white !important;
     position: relative;
-    margin-top: 20px;
+    margin-top: 39px;
     margin-bottom: 20px;
     img {
       position: absolute;
     }
     .header-line {
       top: 50%;
-      left: -65%;
+      left: -64%;
       transform: translateY(-50%);
     }
     .header-line-right {
@@ -71,11 +81,11 @@
     }
   }
   &__main--btn {
-    margin-top: 20px;
+    margin-top: 21px;
     margin-left: 95px;
   }
 }
-
+// Our Opportunity block
 .opportunity {
   position: relative;
   padding: 160px 0 100px 0;
@@ -89,7 +99,8 @@
   }
   &__row {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
+    justify-content: center;
   }
   &__img {
     width: 96px;
@@ -117,8 +128,6 @@
 // Section Circle
 .circle {
   position: relative;
-  .container {
-  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -134,7 +143,7 @@
   }
 
   &__subtitle {
-    margin-bottom: 40px;
+    margin-bottom: 54px;
   }
 
   &__image {
@@ -154,18 +163,31 @@
     bottom: 74px;
     z-index: 6;
   }
+  .circle__btn {
+    width: 180px;
+    padding: 15px 43px 15px 43px;
+  }
 }
 .circle-2 {
-  padding: 77px 0px 80px 0px;
+  padding: 84px 0px 80px 0px;
+  .circle__title {
+    padding-left: 2px;
+  }
+  .circle__subtitle {
+    padding-left: 2px;
+  }
   .circle__mask-img {
     position: absolute;
     left: 0;
   }
   .circle__line-img {
     position: absolute;
-    top: 77px;
+    top: 82px;
     left: 0;
     z-index: 6;
+  }
+  .circle__btn {
+    padding: 15px 43px 15px 47px;
   }
 }
 .circle-3 {
@@ -176,13 +198,16 @@
   }
   .circle__line-img {
     position: absolute;
-    top: 175px;
+    top: 155px;
     right: 0;
     z-index: 6;
   }
   .circle__image {
     width: 445px;
     height: 445px;
+  }
+  .circle__btn {
+    padding: 18px 43px 15px 43px;
   }
 }
 // Footer
@@ -256,9 +281,8 @@
   display: flex;
   right: 0;
   bottom: -7px;
-  column-gap: 56px;
+  column-gap: 44px;
   &__item:last-child {
-    // position: absolute;
     bottom: 0px;
     transform: translateY(7px);
   }
@@ -266,7 +290,7 @@
 // Footer Bottom Content
 .bottom-footer {
   background-color: $footerBg;
-  padding: 36px 0;
+  padding: 30px 0 38px 4px;
   z-index: 2;
   .container {
     display: flex;
@@ -278,6 +302,9 @@
     align-items: center;
     svg path {
       fill: $lightGrey;
+    }
+    .logo {
+      padding-top: 2px;
     }
   }
 }
