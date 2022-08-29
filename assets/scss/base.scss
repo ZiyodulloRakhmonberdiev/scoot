@@ -137,6 +137,7 @@ h6 {
   transition: 0.3s ease 0s;
   white-space: nowrap;
   height: 53px;
+  border: 3px solid transparent;
   &:hover {
     color: $yellow;
     background-color: transparent !important;
